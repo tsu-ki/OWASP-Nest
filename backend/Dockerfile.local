@@ -11,7 +11,7 @@ RUN groupadd owasp && \
 
 ENV PYTHONUNBUFFERED=1
 
-EXPOSE 8000
+EXPOSE 2000
 
 USER owasp
 

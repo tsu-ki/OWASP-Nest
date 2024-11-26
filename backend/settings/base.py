@@ -21,7 +21,7 @@ class Base(Configuration):
     DEBUG = False
 
     SITE_NAME = "localhost"
-    SITE_URL = "http://localhost:8000"
+    SITE_URL = "http://localhost:2000"
 
     DJANGO_APPS = (
         "django.contrib.admin",

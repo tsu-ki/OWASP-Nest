@@ -13,14 +13,14 @@ export type topContributorsType = {
   contributions_count: number;
   login: string;
   name: string;
-}
+};
 
 export type ButtonType = {
   label: string;
   icon?: JSX.Element;
   onclick?: () => void;
   link?: string;
-}
+};
 
 export interface CardProps {
   title: string;
@@ -34,11 +34,10 @@ export interface CardProps {
   projectName?: string;
   projectLink?: string;
   languages?: string[];
-  social?: { title: string, icon: string, url: string }[];
+  social?: { title: string; icon: string; url: string }[];
 }
-
 
 export const tooltipStyle = {
-  backgroundColor: "white",
-  color: "black",
-}
+  backgroundColor: 'white',
+  color: 'black',
+};
