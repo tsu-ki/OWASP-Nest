@@ -1,18 +1,16 @@
 #!/bin/sh
 # .husky/pre-commit
 
-# Ensure that the log file exists
-log_file=".husky/log.txt"
-if [ ! -f "$log_file" ]; then
-  touch "$log_file"
-fi
-
-# Log initial message
-echo "Running pre-commit hook..." >> "$log_file"
-echo "Running lint-staged..." >> "$log_file"
+# Debugging: Log everything to a log file
+echo "Running pre-commit hook..." >> .husky/log.txt
+echo "Running lint-staged..." >> .husky/log.txt
 
 # Set Node.js memory limit if necessary (increase to 4GB if needed)
 export NODE_OPTIONS="--max-old-space-size=4096"
 
 # Run lint-staged with debug information
-npx lint-staged --debug >> "$log_file" 2>&1
+npx lint-staged --debug >> .husky/log.txt 2>&1
+
+# Optional: Run ESLint and Prettier directly for debugging
+# eslint 'frontend/**/*.{ts,tsx}' --fix --config eslint.config.js >> .husky/log.txt 2>&1
+# prettier --write 'frontend/**/*.{ts,tsx}' >> .husky/log.txt 2>&1
