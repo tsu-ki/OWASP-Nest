@@ -3891,7 +3891,7 @@ export const MockProjectData = {
       objectID: '265',
     },
   ],
-};
+}
 
 /*
 {
@@ -4342,7 +4342,7 @@ export const MockContributeData = {
     },
   ],
   open_issues_count: 6095,
-};
+}
 
 /*
 {
@@ -5415,7 +5415,7 @@ export const MockChaptersData = {
       objectID: '216',
     },
   ],
-};
+}
 
 /*
 {
@@ -5706,7 +5706,7 @@ export const MockCommitteeData = {
       objectID: '2',
     },
   ],
-};
+}
 
 /*
 {

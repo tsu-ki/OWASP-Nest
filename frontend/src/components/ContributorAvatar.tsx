@@ -1,5 +1,5 @@
-import { Tooltip } from 'react-tooltip';
-import { tooltipStyle, topContributorsType } from '../lib/constants';
+import { Tooltip } from 'react-tooltip'
+import { tooltipStyle, topContributorsType } from '../lib/constants'
 
 const ContributorAvatar = ({ contributor }: { contributor: topContributorsType }) => {
   return (
@@ -15,7 +15,7 @@ const ContributorAvatar = ({ contributor }: { contributor: topContributorsType }
       />
       <Tooltip id={`avatar-tooltip-${contributor.login}`} style={tooltipStyle} />
     </a>
-  );
-};
+  )
+}
 
-export default ContributorAvatar;
+export default ContributorAvatar

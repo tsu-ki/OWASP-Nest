@@ -1,12 +1,12 @@
 export interface Link {
-  text: string;
-  href: string;
-  isSpan?: boolean;
+  text: string
+  href: string
+  isSpan?: boolean
 }
 
 export interface Section {
-  title: string;
-  links: Link[];
+  title: string
+  links: Link[]
 }
 
 export const footerSections: Section[] = [
@@ -42,4 +42,4 @@ export const footerSections: Section[] = [
       { text: 'Contact Us', href: 'https://owasp.org/contact/' },
     ],
   },
-];
+]

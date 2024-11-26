@@ -22,7 +22,7 @@ const Home = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

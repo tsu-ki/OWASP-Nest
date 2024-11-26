@@ -1,4 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faDiscord,
   faFacebook,
@@ -7,14 +7,14 @@ import {
   faMeetup,
   faSlack,
   faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons'
 import {
   faClock,
   faComment,
   faLightbulb,
   faStar,
   faUser,
-} from '@fortawesome/free-regular-svg-icons';
+} from '@fortawesome/free-regular-svg-icons'
 import {
   faArrowsRotate,
   faCity,
@@ -28,7 +28,7 @@ import {
   faRightToBracket,
   faWandMagicSparkles,
   faX,
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faArrowsRotate,
@@ -55,7 +55,7 @@ library.add(
   faFacebook,
   faDiscord,
   faSlack
-);
+)
 
 export const Icons = {
   idx_updated_at: {
@@ -82,9 +82,9 @@ export const Icons = {
     label: 'Comments count',
     icon: 'fa-regular fa-comment',
   },
-} as const;
+} as const
 
-export type IconKeys = keyof typeof Icons;
+export type IconKeys = keyof typeof Icons
 
 export const level = {
   incubator: {
@@ -103,7 +103,7 @@ export const level = {
     color: '#38a047',
     icon: ' text-white fa-solid fa-flag',
   },
-};
+}
 
 export const urlMappings = [
   { key: 'youtube.com', title: 'YouTube', icon: 'fa-brands fa-youtube' },
@@ -114,4 +114,4 @@ export const urlMappings = [
   { key: 'facebook.com', title: 'Facebook', icon: 'fa-brands fa-facebook' },
   { key: 'discord.com', title: 'Discord', icon: 'fa-brands fa-discord' },
   { key: 'slack.com', title: 'Slack', icon: 'fa-brands fa-slack' },
-];
+]

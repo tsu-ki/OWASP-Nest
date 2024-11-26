@@ -1,26 +1,26 @@
-import { useState, useEffect } from 'react';
-import { cn } from '../lib/utils';
-import FontAwesomeIconWrapper from '../lib/FontAwesomeIconWrapper';
+import { useState, useEffect } from 'react'
+import { cn } from '../lib/utils'
+import FontAwesomeIconWrapper from '../lib/FontAwesomeIconWrapper'
 
 function ModeToggle({ className }: { className?: string }) {
   const [dark, setDark] = useState(() => {
-    return localStorage.getItem('theme') === 'dark';
-  });
+    return localStorage.getItem('theme') === 'dark'
+  })
 
   useEffect(() => {
     if (dark) {
-      document.body.classList.add('dark');
+      document.body.classList.add('dark')
     } else {
-      document.body.classList.remove('dark');
+      document.body.classList.remove('dark')
     }
-  }, [dark]);
+  }, [dark])
 
   const darkModeHandler = () => {
-    setDark(!dark);
-    const newTheme = !dark ? 'dark' : 'light';
-    document.body.classList.toggle('dark', !dark);
-    localStorage.setItem('theme', newTheme);
-  };
+    setDark(!dark)
+    const newTheme = !dark ? 'dark' : 'light'
+    document.body.classList.toggle('dark', !dark)
+    localStorage.setItem('theme', newTheme)
+  }
 
   return (
     <div className={cn('flex items-center space-x-2', className)}>
@@ -35,7 +35,7 @@ function ModeToggle({ className }: { className?: string }) {
         <FontAwesomeIconWrapper icon="fa-solid fa-moon" />
       </span>
     </div>
-  );
+  )
 }
 
-export default ModeToggle;
+export default ModeToggle

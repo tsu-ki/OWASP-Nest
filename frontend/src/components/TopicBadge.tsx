@@ -1,5 +1,5 @@
-import { Tooltip } from 'react-tooltip';
-import { tooltipStyle } from '../lib/constants';
+import { Tooltip } from 'react-tooltip'
+import { tooltipStyle } from '../lib/constants'
 
 const TopicBadge = ({ topic, tooltipLabel }: { topic: string; tooltipLabel?: string }) => {
   return (
@@ -12,7 +12,7 @@ const TopicBadge = ({ topic, tooltipLabel }: { topic: string; tooltipLabel?: str
 
       <Tooltip id={`lang-tooltip-${topic}`} style={tooltipStyle} />
     </div>
-  );
-};
+  )
+}
 
-export default TopicBadge;
+export default TopicBadge
