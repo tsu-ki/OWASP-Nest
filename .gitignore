@@ -12,3 +12,5 @@ __pycache__
 /volumes
 staticfiles
 node_modules
+docker-compose.yaml
+docker-compose-staging.yaml
