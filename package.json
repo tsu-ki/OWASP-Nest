@@ -36,6 +36,7 @@
     "*.tsx": [
       "eslint --fix",
       "prettier --write"
-    ]
+    ],
+    "**/node_modules/*": "skip"
   }
 }
