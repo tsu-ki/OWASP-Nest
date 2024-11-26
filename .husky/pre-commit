@@ -2,8 +2,8 @@
 # .husky/pre-commit
 
 # Debugging: Log everything to a log file
-echo "Running pre-commit hook..." >> .husky/log.txt
-echo "Running lint-staged..." >> .husky/log.txt
+echo "Running pre-commit hook..."
+echo "Running lint-staged..."
 
 # Set Node.js memory limit if necessary (increase to 4GB if needed)
 export NODE_OPTIONS="--max-old-space-size=4096"
