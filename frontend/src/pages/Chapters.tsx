@@ -43,7 +43,7 @@ export default function Chapters() {
                 title={chapter.idx_name}
                 url={chapter.idx_url}
                 summary={chapter.idx_summary}
-                icons={filteredIcons}
+                icon={filteredIcons}
                 leaders={chapter.idx_leaders}
                 topContributors={chapter.idx_top_contributors}
                 button={SubmitButton}
