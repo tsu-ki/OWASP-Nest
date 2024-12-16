@@ -4,5 +4,6 @@
 
 import Home from './Home'
 import Projects from './Projects'
+import Chapters from './Chapters'
 
-export { Home, Projects }
+export { Chapters, Home, Projects }

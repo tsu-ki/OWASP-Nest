@@ -12,20 +12,21 @@ import FontAwesomeIconWrapper from '../lib/FontAwesomeIconWrapper'
 import { cn } from '../lib/utils'
 
 const Card = ({
-  title,
-  url,
-  summary,
-  level,
-  icons,
-  leaders,
-  topContributors,
-  topics,
-  button,
-  projectName,
-  projectLink,
-  languages,
-  social,
-}: CardProps) => {
+                  title,
+                  url,
+                  summary,
+                  level,
+                  icons,
+                  leaders,
+                  topContributors,
+                  topics,
+                  button,
+                  projectName,
+                  projectLink,
+                  languages,
+                  social,
+                  tooltipLabel
+              }: CardProps) => {
   const [visibleLanguages, setVisibleLanguages] = useState(18)
   const [visibleTopics, setVisibleTopics] = useState(18)
 
